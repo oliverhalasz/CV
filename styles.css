@@ -1,0 +1,172 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f8f8f8;
+    color: #444;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  body.dark-mode {
+    background-color: #333;
+    color: #f5f5f5;
+  }
+  
+  body.dark-mode-enter {
+    opacity: 0;
+  }
+  
+  body.dark-mode-enter-active {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+  }
+  
+  header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .cv-title {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #444;
+    text-transform: uppercase;
+  }
+  
+  .profile-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  
+  .profile-pic {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .profile-name {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #444;
+    text-transform: uppercase;
+  }
+  
+  .section {
+    margin-bottom: 40px;
+  }
+  
+  .section-title {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #444;
+    text-transform: uppercase;
+  }
+  
+  .job {
+    margin-bottom: 20px;
+  }
+  
+  .job h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #444;
+  }
+  
+  .job-date {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #777;
+  }
+  
+  .education {
+    margin-bottom: 20px;
+  }
+  
+  .skills,
+  .languages {
+    margin-bottom: 20px;
+  }
+  
+  .sub-section-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #444;
+  }
+  
+  ul {
+    margin-top: 0;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    list-style-type: none;
+  }
+  
+  ul li {
+    margin-bottom: 5px;
+    color: #444;
+  }
+  
+  ul li::before {
+    content: "\2022"; /* Custom bullet point icon */
+    color: #0080ff; /* Bullet point color */
+    font-size: 12px;
+    margin-right: 10px;
+    vertical-align: middle;
+  }
+  
+  p {
+    margin-top: 0;
+    margin-bottom: 10px;
+    line-height: 1.5;
+  }
+  
+  hr {
+    border: none;
+    border-top: 2px dashed #777;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .dark-mode hr {
+    border-top-color: #f5f5f5;
+  }
+  
+  .dark-mode .cv-title,
+  .dark-mode .profile-name,
+  .dark-mode .section-title,
+  .dark-mode .job h3,
+  .dark-mode .sub-section-title,
+  .dark-mode ul li,
+  .dark-mode p {
+    color: #f5f5f5;
+  }
+  
+  .toggle-button {
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: #0080ff;
+    color: #f5f5f5;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .toggle-button:hover {
+    background-color: #005eff;
+  }
+  
+  body.dark-mode .toggle-button {
+    background-color: #f5f5f5;
+    color: #444;
+  }
+  
+  body.dark-mode .toggle-button:hover {
+    background-color: #ddd;
+  }
+  
