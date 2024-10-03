@@ -41,7 +41,7 @@ header {
   object-fit: cover;
   margin-bottom: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  opacity: 1; /* Ensure it's fully visible */
+  opacity: 1;
   animation: fadeIn 1.5s ease-in-out;
 }
 
@@ -82,24 +82,27 @@ header {
   color: #777;
 }
 
-.skills ul, .languages ul, .contacts ul {
+/* Ensure default list-style is removed */
+ul {
   margin-top: 0;
   padding-left: 20px;
-  list-style-type: none;
-  animation: fadeIn 1.2s ease-in-out;
+  list-style: none;  /* Remove default bullets */
 }
 
 ul li {
   margin-bottom: 5px;
   color: #444;
+  position: relative;
 }
 
 ul li::before {
-  content: "\2022"; /* Custom bullet point icon */
+  content: "\2022"; /* Custom bullet point */
   color: #0080ff; /* Bullet point color */
   font-size: 12px;
   margin-right: 10px;
   vertical-align: middle;
+  position: absolute;
+  left: -15px; /* Adjust for better positioning */
 }
 
 p {
