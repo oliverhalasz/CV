@@ -3,81 +3,87 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Curriculum Vitae</title>
+    <title>Curriculum Vitae - Olivér Halász</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header>
-      <h1 class="cv-title">CV</h1>
+      <h1 class="cv-title">Curriculum Vitae</h1>
       <div class="profile-section">
         <img
           class="profile-pic"
           src="assets/images/profile_pic.jpg"
           alt="Profile picture"
         />
-        <h2 class="profile-name">Halász Olivér</h2>
+        <h2 class="profile-name">Olivér Halász</h2>
       </div>
     </header>
 
-    <!-- Add the dark mode toggle button -->
+    <!-- Dark mode toggle button -->
     <button id="dark-mode-toggle" class="toggle-button">
       Toggle Dark Mode
     </button>
 
+    <!-- Work Experience Section -->
     <section class="section">
       <h2 class="section-title">Work Experience</h2>
       <hr />
 
       <div class="job">
-        <h3>Erste Bank Hungary, Data Analyst Intern</h3>
-        <p class="job-date">2021.06 - 2021.09</p>
+        <h3>Oracle, AI / Machine Learning Scientist and Developer Intern</h3>
+        <p class="job-date">2024.02 – 2025.01</p>
         <ul>
-          <li>Using econometric methods to analyze data in R.</li>
-          <li>Assisting the audit team in validating statistical reports.</li>
+          <li>Studied advanced theory of Machine Learning and Deep Learning.</li>
+          <li>Gained familiarity with Oracle Cloud Infrastructure and its Generative AI services.</li>
+          <li>Built Deep Neural Networks using the PyTorch library.</li>
+          <li>Applied different models to perform security classification using AI.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <h3>Erste Bank Hungary, Data Analyst Intern</h3>
+        <p class="job-date">2021.06 – 2021.09</p>
+        <ul>
+          <li>Utilized econometric methods to analyze data in R.</li>
+          <li>Assisted the audit team in validating statistical reports.</li>
         </ul>
       </div>
 
       <div class="job">
         <h3>GEM Student Organization, Vice President, Manager</h3>
-        <p class="job-date">2021.06 - Present</p>
+        <p class="job-date">2021 – 2023</p>
         <ul>
-          <li>
-            Maintaining and creating partnership relations with institutions and
-            corporations.
-          </li>
-          <li>Organizing Mathematics Competition.</li>
-          <li>Organizing professional and social events for our members.</li>
-          <li>Organizing several courses for the members of GEM.</li>
+          <li>Maintained and created partnership relations with institutions and corporations.</li>
+          <li>Organized Mathematics Competition.</li>
+          <li>Organized several courses for the members of GEM.</li>
         </ul>
       </div>
 
       <div class="job">
         <h3>Corvinus University of Budapest, Tutor</h3>
-        <p class="job-date">2020.09 - Present</p>
+        <p class="job-date">2020 – 2023</p>
         <ul>
           <li>
-            Tutoring in the following topics: Real Analysis, Linear Algebra,
-            Probability Theory, Measure Theory, Advanced Equilibrium Theory,
-            Differential Equations.
+            Tutored in the following topics: Real Analysis, Linear Algebra, Probability Theory, Measure Theory, Advanced Equilibrium Theory, Differential Equations.
           </li>
-          <li>
-            Designing and teaching a 12-week course on Financial Mathematics.
-          </li>
+          <li>Designed and taught a 12-week course on Financial Mathematics.</li>
         </ul>
       </div>
     </section>
 
+    <!-- Education Section -->
     <section class="section">
       <h2 class="section-title">Education</h2>
       <hr />
 
       <div class="education">
         <h3>Corvinus University of Budapest</h3>
-        <p class="job-date">2019 - 2024 (Expected)</p>
-        <p>
-          Economic and Financial Mathematical Analysis, Quantitative Finance
-          Specialization
-        </p>
+        <p class="job-date">2019 – 2025</p>
+        <p>MSc. in Quantitative Finance</p>
+        <ul>
+          <li>2019 – 2024: Completed all exams</li>
+          <li>2024 – 2025: Thesis writing (PAC-Learning algorithms)</li>
+        </ul>
       </div>
 
       <div class="education">
@@ -87,66 +93,148 @@
       </div>
     </section>
 
+    <!-- Skills Section -->
     <section class="section">
-      <h2 class="section-title">Computer Skills</h2>
+      <h2 class="section-title">Skills</h2>
       <hr />
 
       <div class="skills">
-        <h3 class="sub-section-title">Advanced Level</h3>
-        <ul>
-          <li>Python</li>
+        <h3 class="sub-section-title">Computer Skills</h3>
+        <div class="skill-level">
+          <h4>Advanced Level</h4>
           <ul>
-            <li>ML packages (NumPy, Pandas, Scikit-learn, SciPy)</li>
-            <li>Data visualization (Matplotlib, Seaborn)</li>
-            <li>Currently learning PyTorch for Neural Networks</li>
+            <li>
+              Python
+              <ul>
+                <li>Efficient code writing. OOP.</li>
+                <li>Using different packages: NumPy, pandas, SciPy, scikit-learn, PyTorch, matplotlib, seaborn.</li>
+                <li>Web scraping with Scrapy.</li>
+              </ul>
+            </li>
+            <li>MATLAB</li>
+            <li>SQL</li>
           </ul>
-          <li>Git</li>
-          <li>MATLAB</li>
-        </ul>
+        </div>
+
+        <div class="skill-level">
+          <h4>Basic Level</h4>
+          <ul>
+            <li>Excel VBA</li>
+            <li>HTML, CSS</li>
+            <li>Regex</li>
+            <li>SPSS</li>
+            <li>MS Office</li>
+            <li>Tableau</li>
+            <li>Git for version control</li>
+          </ul>
+        </div>
       </div>
 
       <div class="skills">
-        <h3 class="sub-section-title">Basic Level</h3>
+        <h3 class="sub-section-title">Math Skills</h3>
+        <div class="skill-category">
+          <h4>Theory</h4>
+          <ul>
+            <li>Probability Theory</li>
+            <li>Machine Learning Theory</li>
+            <li>Operations Research</li>
+            <li>Data Structures and Algorithms</li>
+            <li>Stochastic Calculus</li>
+          </ul>
+        </div>
+        <div class="skill-category">
+          <h4>Applied Mathematics</h4>
+          <ul>
+            <li>Econometrics</li>
+            <li>Time Series Analysis</li>
+          </ul>
+        </div>
+        <div class="skill-category">
+          <h4>Machine Learning</h4>
+          <ul>
+            <li>Supervised learning: Implementing different linear and nonlinear classifiers and regressors.</li>
+            <li>Unsupervised learning: Implementing a variety of dimension reduction and clustering techniques.</li>
+            <li>Ensemble methods using XGBoost, hyperparameter tuning, creating pipelines.</li>
+          </ul>
+        </div>
+        <div class="skill-category">
+          <h4>Deep Learning</h4>
+          <ul>
+            <li>Different Neural Network architectures including Multilayer Perceptrons, Convolutional Neural Networks, Recurrent Neural Networks (GRU, LSTM)</li>
+            <li>Generative models: GANs, Encoder-Decoder Models (Attention, Transformers, LLMs)</li>
+          </ul>
+        </div>
+        <div class="skill-category">
+          <h4>Quantitative Finance</h4>
+          <ul>
+            <li>Pricing Techniques of Fixed Income Products and Derivatives</li>
+            <ul>
+              <li>Analytical solutions using PDEs or SDEs</li>
+              <li>Numerical solutions using MC Simulation and Tree-Based methods</li>
+            </ul>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Awards and Certificates Section -->
+    <section class="section">
+      <h2 class="section-title">Awards and Certificates</h2>
+      <hr />
+
+      <div class="awards">
+        <h3>Awards</h3>
         <ul>
-          <li>Currently mastering: C, C++</li>
-          <li>R, SQL, Excel VBA, html, CSS, Regex, SPSS, MS Office, Tableau</li>
+          <li>National Mathematics Competition (OKTV): 30th Place</li>
+          <li>Table Tennis Championship Budapest: 2nd Place</li>
+        </ul>
+      </div>
+
+      <div class="certificates">
+        <h3>Certificates</h3>
+        <ul>
+          <li>Google – Advanced Data Analytics Specialization</li>
+          <li>Stanford – Machine Learning Specialization</li>
+          <li>Oracle – Oracle Cloud Infrastructure Generative AI Professional</li>
+          <li>Scaled Agile Inc. – SAFe 6 Practitioner</li>
         </ul>
       </div>
     </section>
 
+    <!-- Languages Section -->
     <section class="section">
       <h2 class="section-title">Languages</h2>
       <hr />
 
       <ul class="languages">
-        <li>Hungarian – native</li>
+        <li>Hungarian – Native</li>
         <li>German – Proficient Level</li>
         <li>English – Proficient Level</li>
       </ul>
     </section>
 
+    <!-- Hobbies Section -->
     <section class="section">
       <h2 class="section-title">Hobbies</h2>
       <hr />
 
       <p>
-        Playing table tennis, board games, pub quizzes, swimming and spending
-        time with friends and family.
+        Playing table tennis, board games, pub quizzes, swimming and spending time with friends and family.
       </p>
     </section>
 
+    <!-- Contact Me Section -->
     <section class="section">
       <h2 class="section-title">Contact Me</h2>
       <hr>
       <ul class="contacts">
         <li><strong>Location:</strong> Budapest, Hungary</li>
-        <li><strong>Email:</strong> oliver.halasz.99@gmail.com</li>
-        <li><strong>Phone:</strong> +36302514104</li>
+        <li><strong>Email:</strong> <a href="mailto:oliver.halasz.99@gmail.com">oliver.halasz.99@gmail.com</a></li>
+        <li><strong>Phone:</strong> <a href="tel:+36302514104">+36302514104</a></li>
       </ul>
     </section>
 
-
-
+    <!-- Dark Mode Toggle Script -->
     <script>
       const darkModeToggle = document.getElementById("dark-mode-toggle");
       const body = document.body;
