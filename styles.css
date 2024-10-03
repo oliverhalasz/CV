@@ -1,4 +1,4 @@
-/* Base Styles */
+/* General Body Style */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -8,21 +8,25 @@ body {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+/* Dark Mode Styles */
 body.dark-mode {
   background-color: #333;
   color: #f5f5f5;
 }
 
-body.dark-mode-enter {
-  opacity: 0;
+/* Ensure all text in dark mode is visible (overrides default text color) */
+.dark-mode .cv-title,
+.dark-mode .profile-name,
+.dark-mode .section-title,
+.dark-mode .job h3,
+.dark-mode .sub-section-title,
+.dark-mode ul li,
+.dark-mode p,
+.dark-mode .job-date {
+  color: #f5f5f5;
 }
 
-body.dark-mode-enter-active {
-  opacity: 1;
-  transition: opacity 0.3s ease;
-}
-
-/* Header Styles */
+/* Header Section */
 header {
   text-align: center;
   margin-bottom: 40px;
@@ -33,10 +37,6 @@ header {
   margin-bottom: 20px;
   color: #444;
   text-transform: uppercase;
-}
-
-body.dark-mode .cv-title {
-  color: #f5f5f5;
 }
 
 .profile-section {
@@ -63,11 +63,7 @@ body.dark-mode .cv-title {
   text-transform: uppercase;
 }
 
-body.dark-mode .profile-name {
-  color: #f5f5f5;
-}
-
-/* Section Styles */
+/* Section Title */
 .section {
   margin-bottom: 40px;
 }
@@ -79,28 +75,15 @@ body.dark-mode .profile-name {
   text-transform: uppercase;
 }
 
-body.dark-mode .section-title {
-  color: #f5f5f5;
-}
-
-.job, .education, .skills, .awards, .certificates, .skill-category, .skill-level {
+/* Job Experience Section */
+.job {
   margin-bottom: 20px;
 }
 
-.job h3, .education h3, .awards h3, .certificates h3, .sub-section-title, .skill-category h4, .skill-level h4 {
+.job h3 {
   font-size: 24px;
   margin-bottom: 10px;
   color: #444;
-}
-
-body.dark-mode .job h3,
-body.dark-mode .education h3,
-body.dark-mode .awards h3,
-body.dark-mode .certificates h3,
-body.dark-mode .sub-section-title,
-body.dark-mode .skill-category h4,
-body.dark-mode .skill-level h4 {
-  color: #f5f5f5;
 }
 
 .job-date {
@@ -109,81 +92,36 @@ body.dark-mode .skill-level h4 {
   color: #777;
 }
 
-body.dark-mode .job-date {
-  color: #ccc;
+/* Education Section */
+.education {
+  margin-bottom: 20px;
 }
 
-/* Skills Section Styles */
-.skills .sub-section-title,
-.skills .skill-category h4,
-.skills .skill-level h4 {
+/* Skills, Languages, Contacts Sections */
+.skills,
+.languages,
+.contacts {
+  margin-bottom: 20px;
+}
+
+.sub-section-title {
+  font-size: 24px;
+  margin-bottom: 10px;
   color: #444;
 }
 
-body.dark-mode .skills .sub-section-title,
-body.dark-mode .skills .skill-category h4,
-body.dark-mode .skills .skill-level h4 {
-  color: #f5f5f5;
-}
-
-.skill-category, .skill-level {
-  margin-left: 20px;
-}
-
-.skill-category ul, .skill-level ul {
-  list-style-type: disc;
-  margin-top: 5px;
-}
-
-.skill-category ul ul, .skill-level ul ul {
-  list-style-type: circle;
-  margin-left: 20px;
-}
-
-/* Awards and Certificates Styles */
-.awards ul, .certificates ul, .languages, .contacts {
-  list-style-type: none;
-  padding-left: 0;
-}
-
-.awards ul li, .certificates ul li, .languages li, .contacts li {
-  margin-bottom: 5px;
-  position: relative;
-  padding-left: 20px;
-}
-
-.awards ul li::before,
-.certificates ul li::before,
-.languages li::before,
-.contacts li::before {
-  content: "\2022"; /* Custom bullet point icon */
-  color: #0080ff; /* Bullet point color */
-  font-size: 12px;
-  position: absolute;
-  left: 0;
-  top: 0;
-}
-
-.contacts a {
-  color: #0080ff;
-  text-decoration: none;
-}
-
-.contacts a:hover {
-  text-decoration: underline;
-}
-
-/* General List Styles */
+/* Bullet point styling */
 ul {
   margin-top: 0;
   margin-bottom: 10px;
   padding-left: 20px;
-  list-style-type: none;
+  list-style-type: none; /* Disable default bullet points */
 }
 
 ul li {
   margin-bottom: 5px;
   color: #444;
+  position: relative; /* Positioning for custom bullets */
 }
 
 ul li::before {
@@ -192,20 +130,18 @@ ul li::before {
   font-size: 12px;
   margin-right: 10px;
   vertical-align: middle;
+  position: absolute; /* Use absolute positioning */
+  left: -20px; /* Move it left to avoid duplication */
+  top: 0;
 }
 
-body.dark-mode ul li::before {
-  color: #66b2ff;
-}
-
-/* Paragraph Styles */
+/* Paragraph and horizontal rule */
 p {
   margin-top: 0;
   margin-bottom: 10px;
   line-height: 1.5;
 }
 
-/* Horizontal Rule Styles */
 hr {
   border: none;
   border-top: 2px dashed #777;
@@ -213,15 +149,11 @@ hr {
   margin-bottom: 20px;
 }
 
-body.dark-mode hr {
-  border-top-color: #f5f5f5;
-}
-
 .dark-mode hr {
   border-top-color: #f5f5f5;
 }
 
-/* Toggle Button Styles */
+/* Toggle Button */
 .toggle-button {
   font-size: 18px;
   padding: 10px 20px;
@@ -231,9 +163,6 @@ body.dark-mode hr {
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease, color 0.3s ease;
-  position: fixed;
-  top: 20px;
-  right: 20px;
 }
 
 .toggle-button:hover {
