@@ -18,6 +18,15 @@ header {
   animation: fadeIn 1s ease-in-out;
 }
 
+a {
+  color: #0080ff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 .cv-title {
   font-size: 48px;
   margin-bottom: 20px;
