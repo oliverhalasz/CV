@@ -1,64 +1,142 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #ffffff;
-  color: #333;
   margin: 0;
-  padding: 0;
+  padding: 20px;
+  background-color: #f8f8f8;
+  color: #444;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.container {
-  width: 80%;
-  margin: 0 auto;
+body.dark-mode {
+  background-color: #333;
+  color: #f5f5f5;
 }
 
-.cv-title {
-  font-size: 36px;
+header {
   text-align: center;
-  margin-top: 20px;
-}
-
-.profile-name {
-  font-size: 24px;
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.profile-picture {
-  display: block;
-  margin: 0 auto;
-  border-radius: 50%;
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-}
-
-.section-title {
-  font-size: 22px;
-  margin-top: 30px;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.job, .contacts {
-  margin-bottom: 20px;
-}
-
-.job-date {
-  font-style: italic;
-  margin-left: 10px;
+  margin-bottom: 40px;
+  animation: fadeIn 1s ease-in-out;
 }
 
 a {
   color: #0080ff;
   text-decoration: none;
 }
-
 a:hover {
   text-decoration: underline;
+}
+.cv-title {
+  font-size: 48px;
+  margin-bottom: 20px;
+  color: #444;
+  text-transform: uppercase;
+}
+
+.profile-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 20px;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+.profile-pic {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.profile-name {
+  font-size: 36px;
+  margin-bottom: 10px;
+  color: #444;
+  text-transform: uppercase;
+  animation: slideInFromLeft 1s ease-in-out;
+}
+
+.section {
+  margin-bottom: 40px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.section-title {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #444;
+  text-transform: uppercase;
+}
+
+.job, .education, .skills, .languages, .contacts {
+  margin-bottom: 20px;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.job h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #444;
+}
+
+.job-date {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #777;
+}
+
+/* Ensure default list-style is removed */
+ul {
+  margin-top: 0;
+  padding-left: 20px;
+  list-style: none;  /* Remove default bullets */
+}
+
+ul li {
+  margin-bottom: 5px;
+  color: #444;
+  position: relative;
+}
+
+ul li::before {
+  content: "\2022"; /* Custom bullet point */
+  color: #0080ff; /* Bullet point color */
+  font-size: 12px;
+  margin-right: 10px;
+  vertical-align: middle;
+  position: absolute;
+  left: -15px; /* Adjust for better positioning */
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+hr {
+  border: none;
+  border-top: 2px dashed #777;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.dark-mode hr {
+  border-top-color: #f5f5f5;
+}
+
+.dark-mode .cv-title,
+.dark-mode .profile-name,
+.dark-mode .section-title,
+.dark-mode .job h3,
+.dark-mode .sub-section-title,
+.dark-mode ul li,
+.dark-mode p {
+  color: #f5f5f5;
 }
 
 .toggle-button {
@@ -69,7 +147,6 @@ a:hover {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  margin-right: 10px;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -77,15 +154,43 @@ a:hover {
   background-color: #005eff;
 }
 
-.dark-mode {
-  background-color: #333;
-  color: #f5f5f5;
+body.dark-mode .toggle-button {
+  background-color: #f5f5f5;
+  color: #444;
 }
 
-.dark-mode a {
-  color: #80bfff;
+body.dark-mode .toggle-button:hover {
+  background-color: #ddd;
 }
 
-.dark-mode a:hover {
-  color: #a0cfff;
+/* Keyframes for animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
