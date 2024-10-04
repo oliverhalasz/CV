@@ -1,263 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Curriculum Vitae - Olivér Halász</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Curriculum Vitae - Halász Olivér</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
     <header>
       <h1 class="cv-title">Curriculum Vitae</h1>
-      <div class="profile-section">
-        <img
-          class="profile-pic"
-          src="assets/images/profile_pic.jpg"
-          alt="Profile picture"
-        />
-        <h2 class="profile-name">Olivér Halász</h2>
-      </div>
+      <h2 class="profile-name">Halász Olivér</h2>
+      <img src="profile.jpg" alt="Profile Picture" class="profile-picture">
     </header>
 
-    <!-- Dark mode toggle button -->
-    <button id="dark-mode-toggle" class="toggle-button">
-      Toggle Dark Mode
-    </button>
-
-    <!-- Work Experience Section -->
-    <section class="section fade-in">
-      <h2 class="section-title">Work Experience</h2>
-      <hr />
-
-      <div class="job">
-        <h3>Oracle, AI / Machine Learning Scientist and Developer Intern</h3>
-        <p class="job-date">2024.02 – 2025.01</p>
-        <ul>
-          <li>Studied advanced theory of Machine Learning and Deep Learning.</li>
-          <li>Gained familiarity with Oracle Cloud Infrastructure and its Generative AI services.</li>
-          <li>Built Deep Neural Networks using the PyTorch library.</li>
-          <li>Applied different models to perform security classification using AI.</li>
-        </ul>
-      </div>
-
-      <div class="job">
-        <h3>Erste Bank Hungary, Data Analyst Intern</h3>
-        <p class="job-date">2021.06 – 2021.09</p>
-        <ul>
-          <li>Utilized econometric methods to analyze data in R.</li>
-          <li>Assisted the audit team in validating statistical reports.</li>
-        </ul>
-      </div>
-
-      <div class="job">
-        <h3>GEM Student Organization, Vice President, Manager</h3>
-        <p class="job-date">2021 – 2023</p>
-        <ul>
-          <li>Maintained and created partnership relations with institutions and corporations.</li>
-          <li>Organized Mathematics Competition.</li>
-          <li>Organized several courses for the members of GEM.</li>
-        </ul>
-      </div>
-
-      <div class="job">
-        <h3>Corvinus University of Budapest, Tutor</h3>
-        <p class="job-date">2020 – 2023</p>
-        <ul>
-          <li>
-            Tutored in the following topics: Real Analysis, Linear Algebra, Probability Theory, Measure Theory, Advanced Equilibrium Theory, Differential Equations.
-          </li>
-          <li>Designed and taught a 12-week course on Financial Mathematics.</li>
-        </ul>
-      </div>
+    <section class="about-me">
+      <h3 class="section-title">About Me</h3>
+      <p>Data Scientist with a strong interest in Mathematics and Economics. Specialized in Deep Learning techniques applied to Quantitative Finance.</p>
     </section>
 
-    <!-- Education Section -->
-    <section class="section fade-in">
-      <h2 class="section-title">Education</h2>
-      <hr />
-
-      <div class="education">
-        <h3>Corvinus University of Budapest</h3>
-        <p class="job-date">2019 – 2025</p>
-        <p>MSc. in Quantitative Finance</p>
-        <ul>
-          <li>2019 – 2024: Completed all exams</li>
-          <li>2024 – 2025: Thesis writing (PAC-Learning algorithms)</li>
-        </ul>
-      </div>
-
-      <div class="education">
-        <h3>University of Trier</h3>
-        <p class="job-date">2022</p>
-        <p>International Summer School, German Language Studies</p>
-      </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section class="section fade-in">
-      <h2 class="section-title">Skills</h2>
-      <hr />
-
-      <div class="skills">
-        <h3 class="sub-section-title">Computer Skills</h3>
-        <div class="skill-level">
-          <h4>Advanced Level</h4>
-          <ul>
-            <li>
-              Python
-              <ul>
-                <li>Efficient code writing. OOP.</li>
-                <li>Using different packages: NumPy, pandas, SciPy, scikit-learn, PyTorch, matplotlib, seaborn.</li>
-                <li>Web scraping with Scrapy.</li>
-              </ul>
-            </li>
-            <li>MATLAB</li>
-            <li>SQL</li>
-          </ul>
-        </div>
-
-        <div class="skill-level">
-          <h4>Basic Level</h4>
-          <ul>
-            <li>Excel VBA</li>
-            <li>HTML, CSS</li>
-            <li>Regex</li>
-            <li>SPSS</li>
-            <li>MS Office</li>
-            <li>Tableau</li>
-            <li>Git for version control</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="skills">
-        <h3 class="sub-section-title">Math Skills</h3>
-        <div class="skill-category">
-          <h4>Theory</h4>
-          <ul>
-            <li>Probability Theory</li>
-            <li>Machine Learning Theory</li>
-            <li>Operations Research</li>
-            <li>Data Structures and Algorithms</li>
-            <li>Stochastic Calculus</li>
-          </ul>
-        </div>
-        <div class="skill-category">
-          <h4>Applied Mathematics</h4>
-          <ul>
-            <li>Econometrics</li>
-            <li>Time Series Analysis</li>
-          </ul>
-        </div>
-        <div class="skill-category">
-          <h4>Machine Learning</h4>
-          <ul>
-            <li>Supervised learning: Implementing different linear and nonlinear classifiers and regressors.</li>
-            <li>Unsupervised learning: Implementing a variety of dimension reduction and clustering techniques.</li>
-            <li>Ensemble methods using XGBoost, hyperparameter tuning, creating pipelines.</li>
-          </ul>
-        </div>
-        <div class="skill-category">
-          <h4>Deep Learning</h4>
-          <ul>
-            <li>Different Neural Network architectures including Multilayer Perceptrons, Convolutional Neural Networks, Recurrent Neural Networks (GRU, LSTM)</li>
-            <li>Generative models: GANs, Encoder-Decoder Models (Attention, Transformers, LLMs)</li>
-          </ul>
-        </div>
-        <div class="skill-category">
-          <h4>Quantitative Finance</h4>
-          <ul>
-            <li>Pricing Techniques of Fixed Income Products and Derivatives</li>
-            <ul>
-              <li>Analytical solutions using PDEs or SDEs</li>
-              <li>Numerical solutions using MC Simulation and Tree-Based methods</li>
-            </ul>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- Awards and Certificates Section -->
-    <section class="section fade-in">
-      <h2 class="section-title">Awards and Certificates</h2>
-      <hr />
-
-      <div class="awards">
-        <h3>Awards</h3>
-        <ul>
-          <li>National Mathematics Competition (OKTV): 30th Place</li>
-          <li>Table Tennis Championship Budapest: 2nd Place</li>
-        </ul>
-      </div>
-
-      <div class="certificates">
-        <h3>Certificates</h3>
-        <ul>
-          <li><strong>Google –</strong> <a href="https://www.coursera.org/account/accomplishments/specialization/UQ69LRUQBPND" target="_blank">Advanced Data Analytics Specialization</a></li>
-          <li><strong>Stanford –</strong> <a href="https://www.coursera.org/account/accomplishments/specialization/09QDGYPAJPGC" target="_blank">Machine Learning Specialization</a></li>
-          <li><strong>Oracle –</strong> <a href="https://catalog-education.oracle.com/pls/certview/sharebadge?id=C76FFB8CD67562227D63D95F9E96204479B54668C7119888153E02B69618A3B3" target="_blank">Oracle Cloud Infrastructure Generative AI Professional</a></li>
-          <li><strong>Scaled Agile Inc. –</strong> <a href="https://www.credly.com/badges/dfd592ad-2bec-4116-a307-6b429f7dc82a/linked_in_profile" target="_blank">SAFe 6 Practitioner</a></li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- Languages Section -->
-    <section class="section fade-in">
-      <h2 class="section-title">Languages</h2>
-      <hr />
-
-      <ul class="languages">
-        <li>Hungarian – Native</li>
-        <li>German – Proficient Level</li>
-        <li>English – Proficient Level</li>
+    <section class="experience">
+      <h3 class="section-title">Work Experience</h3>
+      <ul>
+        <li class="job">
+          <h3>Erste Bank Hungary, Data Analyst Intern</h3>
+          <span class="job-date">2021.06 - 2021.09</span>
+        </li>
+        <li class="job">
+          <h3>GEM Student Organization, Vice President, Manager</h3>
+          <span class="job-date">2021.06 - Present</span>
+        </li>
+        <li class="job">
+          <h3>Corvinus University of Budapest, Tutor</h3>
+          <span class="job-date">2020.09 - Present</span>
+        </li>
       </ul>
     </section>
 
-    <!-- Hobbies Section -->
-    <section class="section fade-in">
-      <h2 class="section-title">Hobbies</h2>
-      <hr />
-
-      <p>
-        Playing table tennis, board games, pub quizzes, swimming and spending time with friends and family.
-      </p>
+    <section class="education">
+      <h3 class="section-title">Education</h3>
+      <ul>
+        <li>Google – <a href="https://www.coursera.org/account/accomplishments/specialization/UQ69LRUQBPND" target="_blank">Advanced Data Analytics Specialization</a></li>
+        <li>Stanford – <a href="https://www.coursera.org/account/accomplishments/specialization/09QDGYPAJPGC" target="_blank">Machine Learning Specialization</a></li>
+        <li>Oracle – <a href="https://catalog-education.oracle.com/pls/certview/sharebadge?id=C76FFB8CD67562227D63D95F9E96204479B54668C7119888153E02B69618A3B3" target="_blank">Oracle Cloud Infrastructure Generative AI Professional</a></li>
+        <li>Scaled Agile Inc. – <a href="https://www.credly.com/badges/dfd592ad-2bec-4116-a307-6b429f7dc82a/linked_in_profile" target="_blank">SAFe 6 Practitioner</a></li>
+      </ul>
     </section>
 
-    <!-- Contact Me Section -->
-    <section class="section fade-in">
-      <h2 class="section-title">Contact Me</h2>
-      <hr>
+    <section class="skills">
+      <h3 class="section-title">Skills</h3>
+      <h4>Advanced Level</h4>
+      <ul>
+        <li>Python</li>
+        <li>Deep Learning</li>
+        <li>Machine Learning</li>
+      </ul>
+      <h4>Basic Level</h4>
+      <ul>
+        <li>SQL</li>
+        <li>Data Visualization</li>
+      </ul>
+    </section>
+
+    <section class="languages">
+      <h3 class="section-title">Languages</h3>
+      <ul>
+        <li>English - Fluent</li>
+        <li>German - Fluent</li>
+        <li>Hungarian - Native</li>
+      </ul>
+    </section>
+
+    <section class="hobbies">
+      <h3 class="section-title">Hobbies</h3>
+      <ul>
+        <li>Running</li>
+        <li>Reading</li>
+        <li>Traveling</li>
+      </ul>
+    </section>
+
+    <section class="contact">
+      <h3 class="section-title">Contact</h3>
       <ul class="contacts">
-        <li><strong>Location:</strong> Budapest, Hungary</li>
+        <li><strong>Location:</strong> <a href="#">Budapest, Hungary</a></li>
         <li><strong>Email:</strong> <a href="mailto:oliver.halasz.99@gmail.com">oliver.halasz.99@gmail.com</a></li>
         <li><strong>Phone:</strong> <a href="tel:+36302514104">+36302514104</a></li>
       </ul>
     </section>
 
-    <!-- Dark Mode Toggle Script -->
-    <script>
-      const darkModeToggle = document.getElementById("dark-mode-toggle");
-      const body = document.body;
+    <div class="buttons">
+      <button id="dark-mode-toggle" class="toggle-button">Dark Mode</button>
+      <button id="lang-toggle" class="toggle-button">Switch to German</button>
+    </div>
+  </div>
 
-      darkModeToggle.addEventListener("click", function () {
-        body.classList.toggle("dark-mode");
-      });
+  <script>
+    const darkModeToggle = document.getElementById('dark-mode-toggle');
+    const body = document.body;
 
-      // Intersection Observer for Fade-In Animations
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-            observer.unobserve(entry.target);
-          }
-        });
-      }, {
-        threshold: 0.1
-      });
+    darkModeToggle.addEventListener('click', function () {
+      body.classList.toggle('dark-mode');
+    });
 
-      document.querySelectorAll('.fade-in').forEach(section => {
-        observer.observe(section);
-      });
-    </script>
-  </body>
+    const langToggle = document.getElementById('lang-toggle');
+    let isGerman = false;
+
+    langToggle.addEventListener('click', function () {
+      if (!isGerman) {
+        document.querySelector('.cv-title').textContent = 'Lebenslauf';
+        document.querySelector('.profile-name').textContent = 'Halász Olivér';
+        document.querySelectorAll('.section-title')[0].textContent = 'Berufserfahrung';
+        document.querySelectorAll('.job h3')[0].textContent = 'Erste Bank Ungarn, Datenanalyst Praktikant';
+        document.querySelectorAll('.job h3')[1].textContent = 'GEM Studentenorganisation, Vizepräsident, Manager';
+        document.querySelectorAll('.job h3')[2].textContent = 'Corvinus Universität Budapest, Tutor';
+        
+        document.querySelectorAll('.section-title')[1].textContent = 'Bildung';
+        document.querySelectorAll('.section-title')[2].textContent = 'Fähigkeiten';
+        document.querySelectorAll('.section-title')[3].textContent = 'Sprachen';
+        document.querySelectorAll('.section-title')[4].textContent = 'Hobbys';
+        document.querySelectorAll('.section-title')[5].textContent = 'Kontakt';
+        
+        langToggle.textContent = 'Wechseln Sie zu Englisch';
+        isGerman = true;
+      } else {
+        document.querySelector('.cv-title').textContent = 'Curriculum Vitae';
+        document.querySelectorAll('.section-title')[0].textContent = 'Work Experience';
+        document.querySelectorAll('.job h3')[0].textContent = 'Erste Bank Hungary, Data Analyst Intern';
+        document.querySelectorAll('.job h3')[1].textContent = 'GEM Student Organization, Vice President, Manager';
+        document.querySelectorAll('.job h3')[2].textContent = 'Corvinus University of Budapest, Tutor';
+        
+        document.querySelectorAll('.section-title')[1].textContent = 'Education';
+        document.querySelectorAll('.section-title')[2].textContent = 'Skills';
+        document.querySelectorAll('.section-title')[3].textContent = 'Languages';
+        document.querySelectorAll('.section-title')[4].textContent = 'Hobbies';
+        document.querySelectorAll('.section-title')[5].textContent = 'Contact';
+        
+        langToggle.textContent = 'Switch to German';
+        isGerman = false;
+      }
+    });
+  </script>
+</body>
 </html>
